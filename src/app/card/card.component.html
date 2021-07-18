@@ -1,0 +1,43 @@
+ <!-- <mat-card class="example-card">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-header>
+        <span>
+           <mat-card-title>Laptop Asuse 
+        </mat-card-title>
+           <mat-card-subtitle style="color: red;" >97000 yen</mat-card-subtitle>
+        </span>
+         
+       </mat-card-header>
+    <mat-card-content>
+      <p>
+        cpu 2800 1700 intel
+      <br>
+       Ram 16 GB DDR4
+       <br>
+       VGA 3200 6 GB
+          <br>HDD 1TB +256 GB SSD
+      </p>
+    </mat-card-content>
+    <mat-card-actions  >
+      <button mat-button class="toolbar-spacer" ><mat-icon>shopping_cart</mat-icon></button>
+     
+    </mat-card-actions>
+  </mat-card> -->
+   <mat-grid-list cols="3"   >
+     <mat-grid-tile *ngFor="let product of  products  ">
+<mat-card class="example-card">
+  
+  <mat-card-content>
+    <img mat-card-image src="{{product.imgUrl}}" >
+    <p>{{product.title}}:  {{product.price}}</p>
+    <p> {{product.para}}</p>
+  </mat-card-content>
+  <mat-card-actions  >
+    <button mat-button class="toolbar-spacer" ><mat-icon>shopping_cart</mat-icon></button>
+   
+  </mat-card-actions>
+</mat-card>
+     </mat-grid-tile>
+   </mat-grid-list> 
+  
+

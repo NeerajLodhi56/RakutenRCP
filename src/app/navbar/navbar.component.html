@@ -1,0 +1,64 @@
+
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Shopping</span>
+    <span class="toolbar-spacer"></span>
+
+    <app-langauge></app-langauge>
+    <app-notification></app-notification>
+    <app-menu></app-menu>
+
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav class="content mat-elevation-z8" opened mode="side" #sidenav>
+      <mat-nav-list>
+
+        <a  mat-list-item href="#">
+          <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span>Dashboard</span>
+        </button>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a routerLink="card" mat-list-item >
+
+          <button mat-button class="menu-button">
+            
+            <mat-icon>shopping_cart</mat-icon>
+            <span>Shopping</span>
+        </button>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a mat-list-item href="#">
+          <button mat-button class="menu-button">
+            <mat-icon>account_box</mat-icon>
+            <span>Profile</span>
+        </button>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a routerLink="table" mat-list-item >
+          <button mat-button class="menu-button">
+            <mat-icon>mail_outline</mat-icon>
+            <span>Inbox</span>
+        </button>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-nav-list>
+  
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+    </div>
+    
+    </mat-sidenav-content>
+  </mat-sidenav-container>

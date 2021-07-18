@@ -1,0 +1,10 @@
+<button mat-button [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon></button>
+<mat-menu #menu="matMenu" xPosition="before">
+    <button mat-menu-item>
+        <mat-icon>call_missed_outgoing</mat-icon>
+        LogOut</button>
+
+    <button mat-menu-item>
+        <mat-icon>account_box</mat-icon>
+        Profile</button>
+</mat-menu>
