@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PRODUCT } from '../products';
+import { PRODUCT } from '../mock-data/products';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',

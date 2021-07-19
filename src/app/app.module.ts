@@ -24,6 +24,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TableComponent } from './table/table.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [
     AppComponent,
